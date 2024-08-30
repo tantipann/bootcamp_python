@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Colores</title>
+    <style>
+        body {
+            display: flex; 
+            justify-content: center;
+            border: 1px solid rgba(138, 128, 128, 0.767);
+            width: 328px;
+            margin: 0 auto;
+        }
+        table {
+            border-collapse: collapse;                        
+        }
+        td {
+            border: 2px solid white; 
+            padding: 0px; 
+        }
+
+        .rojo { background-color: red; }
+        .cafe { background-color: brown; }
+        .naranjo { background-color: orange; }
+        .blanco { background-color: white; }
+        .azul { background-color: blue; }
+        .rosado { background-color: pink; }
+        .purpura { background-color: purple; }
+        .verde { background-color: green; }
+        .gris { background-color: grey; }
+        .violeta { background-color: violet; }
+        .amarillo { background-color: yellow; }
+        .turquesa { background-color: turquoise; }
+        .negro { background-color: black; color: white; }
+    </style>
+</head>
+<body>
+    <main>
+        <table>
+            <tr>
+                <td class="rojo">ROJO</td>
+                <td class="blanco">BLANCO</td>
+                <td class="verde">VERDE</td>
+                <td class="gris">GRIS</td>
+            </tr>
+            <tr>
+                <td class="cafe" rowspan="2">CAFE</td>
+                <td class="azul">AZUL</td>
+                <td class="violeta" colspan="2">VIOLETA</td>
+            </tr>
+            <tr>
+                <td class="rosado">ROSADO</td>
+                <td class="amarillo" rowspan="2">AMARILLO</td>
+                <td class="turquesa">TURQUESA</td>
+            </tr>
+            <tr>
+                <td class="naranjo">NARANJO</td>
+                <td class="purpura">PURPURA</td>
+                <td class="negro">NEGRO</td>
+            </tr>
+        </table>
+    </main>  
+</body>
+</html>

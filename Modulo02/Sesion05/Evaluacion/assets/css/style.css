@@ -1,0 +1,11 @@
+.navbar-custom .nav-link {
+    color: white; /* Color blanco para los enlaces de navegación */
+}
+
+.card-text{
+    height: 8em;
+}
+
+.card-footer {
+    background-color: white;
+}

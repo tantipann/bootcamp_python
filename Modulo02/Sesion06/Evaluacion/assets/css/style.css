@@ -1,0 +1,73 @@
+/* Tipografía general de la página */
+body {
+    font-family: Verdana, sans-serif;
+}
+
+/* Barra de navegación */
+.navbar{
+    background-color: #051B54;
+    color: white;
+}
+.nav-link{
+    color: white;
+}
+
+/* Botón de inicio de sesión */
+.login-button {
+    background-color:#FFFFFF33;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Sección vacaciones debajo de la barra de navegación */
+#vacaciones{
+    background-color: #62DAD3;
+}
+
+/* Nombre de la empresa */
+.company-name {
+    font-family: 'Gill Sans', sans-serif;
+    font-size: 24px;
+
+}
+
+/* Formulario */
+.formulario {
+
+    padding: 20px;
+    box-shadow: 1px 1px 4px 8px rgba(0, 0, 0, 0.2); /* Sombreado */
+    border-radius: 5px;
+    background-color: white;
+}
+
+.selectores{
+    background-color: white;
+    border: 0px;
+    color: #051B54;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+  
+  .tab-button {
+    flex: 1;
+    background-color: white;
+    border: 1px solid #ddd;
+    color: #051B54;
+    border-radius: 0.25rem 0.25rem 0 0;
+    padding: 10px 20px;
+    text-align: center;
+    margin-left: -3px;
+    margin-right: -3px;
+    
+  }
+  
+ 
+ 
+  

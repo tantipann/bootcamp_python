@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+h1 {
+    margin-bottom: 20px;
+}
+.button-container {
+    display: flex;
+    gap: 10px;
+}
+.button-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+.primary-btn {
+    background-color: #3498db;
+}
+.secondary-btn {
+    background-color: #2ecc71;
+}
+.success-btn {
+    background-color: #27ae60;
+}
+.danger-btn {
+    background-color: #e74c3c;
+}
+.button-container button:hover {
+    opacity: 0.8;
+}
