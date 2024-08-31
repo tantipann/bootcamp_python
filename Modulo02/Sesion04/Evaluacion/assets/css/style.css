@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  flex: 1 1 calc(33.333% - 20px);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*
+    Pantalla Small (>=576px) + Medium (>=768px) + Pantalla Large (>=992px)
+*/
+@media (min-width: 576px) and (max-width: 1199px) {
+  /* Estilos generales para la galería */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .gallery-item {
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: 50%;
+    box-sizing: border-box;
+  }
+
+  /* Estilo específico para la tercera imagen */
+  #perros {
+    flex: 0 0 100%;
+    max-width: 50%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  /* Asegura que las imágenes se escalen correctamente */
+  .gallery-item img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/*
+    Pantalla Extra small (<576px)
+*/
+@media (max-width: 575px) {
+  .gallery-item {
+    flex: 1 1 100%;
+  }
+}

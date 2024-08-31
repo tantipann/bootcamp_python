@@ -1,0 +1,6 @@
+#text2 {
+    display: none; /* Inicialmente oculto */
+}
+#img {
+    transition: transform 0.3s ease; /* Para una animación suave al cambiar el tamaño */
+}
