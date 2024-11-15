@@ -18,7 +18,7 @@ Siga estos pasos para configurar y ejecutar el proyecto **"VENTA VIRTUAL DE VEH�
 Clone o descargue el repositorio del proyecto desde el siguiente enlace:
 
 ```
-git clone https://github.com/usuario/proyecto_vehiculos_django.git
+git clone https://github.com/tantipann/bootcamp_python/tree/8f5175fde924d6197d906b8b9dc451dafe6a626e/Modulo06/Evaluacion/proyecto_vehiculos_django.git
 ```
 
 Ingrese al directorio del proyecto:
@@ -42,7 +42,7 @@ python3 -m venv proyecto_vehiculos_django
 **En Windows:**
 
 ```
-proyecto_vehiculos_django\Scriptsctivate
+proyecto_vehiculos_django\Scripts\activate
 ```
 
 **En macOS/Linux:**
@@ -99,7 +99,7 @@ GRANT ALL PRIVILEGES ON DATABASE vehiculos_db TO vehiculos_user;
 
 ## 6. Configuración en settings.py
 
-Edite el archivo `settings.py` en el proyecto y configure la base de datos según el ejemplo anterior:
+Edite el archivo `settings.py` en el proyecto y configure la base de datos, *según el ejemplo anterior*:
 
 ```python
 DATABASES = {
@@ -168,15 +168,15 @@ La barra de navegación incluye enlaces a:
 ## 10. Funcionalidades del Proyecto
 
 - **Barra de Navegación**: Incluye enlaces a las páginas de **Inicio**, **Agregar Vehículos** y **Listar Vehículos**.
-    * El acceso a las páginas depende de los permisos del usuario.
+    *El acceso a las páginas depende de los permisos del usuario.*
   
 - **Página de Inicio**: Muestra un mensaje de bienvenida.
 
 - **Agregar Vehículos**: Formulario para ingresar nuevos vehículos a la base de datos.
-    * Esta opción está disponible únicamente para usuarios registrados que cuenten con permisos de agregado de vehículos.
+    *Esta opción está disponible únicamente para usuarios registrados que cuenten con permisos de agregado de vehículos.*
 
 - **Listar Vehículos**: Tabla que muestra los vehículos existentes y su condición de precio.
-    * Esta funcionalidad solo está disponible para usuarios registrados que posean el permiso de visualización del catálogo.
+    *Esta funcionalidad solo está disponible para usuarios registrados que posean el permiso de visualización del catálogo.*
 
 ---
 
@@ -184,12 +184,5 @@ La barra de navegación incluye enlaces a:
 
 - **Error de base de datos**: Verifique que ha ejecutado las migraciones correctamente y que la configuración de `settings.py` es correcta.
 
----
-
-## 12. Contacto
-
-Para más información o problemas con la configuración, contacte con el equipo de soporte a través de [soporte@vehiculos.com](mailto:soporte@vehiculos.com).
-
----
 
 © 2024 **VENTA VIRTUAL DE VEHÍCULOS**. Todos los derechos reservados.
