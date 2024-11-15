@@ -167,16 +167,19 @@ La barra de navegación incluye enlaces a:
 
 ## 10. Funcionalidades del Proyecto
 
-- **Barra de Navegación**: Incluye enlaces a las páginas de **Inicio**, **Agregar Vehículos** y **Listar Vehículos**.
+- **Barra de Navegación**: Incluye enlaces a las páginas de navegación del sito las cuales estan relacionadas con las funcionalidades **Inicio**, **Agregar Vehículos** y **Listar Vehículos**.
     *El acceso a las páginas depende de los permisos del usuario.*
   
 - **Página de Inicio**: Muestra un mensaje de bienvenida.
 
 - **Agregar Vehículos**: Formulario para ingresar nuevos vehículos a la base de datos.
-    *Esta opción está disponible únicamente para usuarios registrados que cuenten con permisos de agregado de vehículos.*
+    Se puede acceder tanto por el menú “Agregar” o como por la url http://localhost:8000/vehiculo/add
+    *Esta opción está disponible únicamente para usuarios registrados que cuenten con permisos de "add_vehiculomodel".*
 
-- **Listar Vehículos**: Tabla que muestra los vehículos existentes y su condición de precio.
-    *Esta funcionalidad solo está disponible para usuarios registrados que posean el permiso de visualización del catálogo.*
+- **Listar Vehículos**: Tabla que muestra los vehículos existentes
+    Su condición de precio se evalúa de acuerdo a las siguientes condiciones: **bajo**, entre 0 y 10000; **Medio**, para mayores de 10000 y 30000; y **alto**, para
+mayores de 30000. .
+    *Esta funcionalidad solo está disponible para usuarios registrados que posean el permiso de "visualizar_catalogo".*
 
 ---
 
