@@ -116,16 +116,23 @@ DATABASES = {
 
 ---
 
+
 ## 7. Cargar Estructura de la Base de Datos
 
-1. Realice las migraciones para configurar la base de datos:
+1. Ingrese a la carpeta del proyecto:
+
+```
+cd config
+```
+
+2. Realice las migraciones para configurar la base de datos:
 
 ```
 python manage.py makemigrations
 python manage.py migrate
 ```
 
-2. Crear un usuario administrador:
+3. Crear un usuario administrador:
 
 ```
 python manage.py createsuperuser
@@ -140,8 +147,6 @@ usuario: admin
 correo: admin@admin.cl
 contraseña: admin
 ```
-
----
 
 ## 8. Ejecutar el Servidor
 
@@ -167,21 +172,46 @@ La barra de navegación incluye enlaces a:
 
 ## 10. Funcionalidades del Proyecto
 
-- **Barra de Navegación**: Incluye enlaces a las páginas de navegación del sito las cuales estan relacionadas con las funcionalidades **Inicio**, **Agregar Vehículos** y **Listar Vehículos**.
-    *El acceso a las páginas depende de los permisos del usuario.*
-  
-- **Página de Inicio**: Muestra un mensaje de bienvenida.
+ **1. Inicio de Sesión (Login)**
+- Permite a los usuarios autenticarse en el sistema.
+- Acceso controlado basado en credenciales registradas previamente.
 
-- **Agregar Vehículos**: Formulario para ingresar nuevos vehículos a la base de datos.
-    Se puede acceder tanto por el menú “Agregar” o como por la url http://localhost:8000/vehiculo/add
-    *Esta opción está disponible únicamente para usuarios registrados que cuenten con permisos de "add_vehiculomodel".*
+ **2. Cierre de Sesión (Logout)**
+- Funcionalidad que garantiza la seguridad cerrando la sesión activa del usuario.
+- Redirecciona a la página de Inicio
 
-- **Listar Vehículos**: Tabla que muestra los vehículos existentes
-    Su condición de precio se evalúa de acuerdo a las siguientes condiciones: **bajo**, entre 0 y 10000; **Medio**, para mayores de 10000 y 30000; y **alto**, para
-mayores de 30000. .
-    *Esta funcionalidad solo está disponible para usuarios registrados que posean el permiso de "visualizar_catalogo".*
+**3. Página de Inicio**
+- Muestra un mensaje de bienvenida.
+- Sirve como punto de acceso a las demás funcionalidades.
+
+**4. Registrar Usuarios**
+- Permite registrar nuevos usuarios en el sistema.
+- Los usuarios registrados reciben automáticamente permisos de `visualizar_catalogo`.
+- Redirección a la página de inicio después del registro exitoso.
+
+**5. Agregar Vehículos**
+- Formulario para registrar nuevos vehículos en la base de datos.
+- Acceso controlado mediante el permiso específico `add_vehiculo`.
+- Se accede desde la barra de navegacion de desde la URL: `http://localhost:8000/vehiculo/add`.
+
+**6. Listar Vehículos**
+- Muestra una tabla con los vehículos registrados en el sistema.
+- La tabla clasifica los vehículos según su precio en categorías: **bajo**, **medio** y **alto** dependiendo de una condición de precio.
+- Acceso limitado a usuarios con el permiso `"visualizar_catalogo"`.
+
+**7. Interfaz de Administración**
+- Acceso reservado para usuarios con permisos de administrador y permisos específicos según configuración.
+- Permite gestionar directamente la base de datos del sistema.
+- Algunos usuarios no administradores pueden tener acceso limitado para agregar vehículos u otras funcionalidades según los permisos asignados.
+
+**8. Barra de Navegación Dinámica**
+- Muestra enlaces como **Inicio**, **Agregar**, **Listar**, **Registrar Usuario**, y otros.
+- Los enlaces se ajustan según los permisos del usuario autenticado, asegurando una experiencia personalizada y segura.
 
 ---
+
+### Nota
+El sistema utiliza permisos detallados para garantizar que cada usuario acceda solo a las funcionalidades para las que está autorizado. Esto asegura la integridad y la seguridad de los datos.
 
 ## 11. Problemas Comunes
 
