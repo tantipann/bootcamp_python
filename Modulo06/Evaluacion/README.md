@@ -167,6 +167,8 @@ La barra de navegación incluye enlaces a:
 - **Inicio**: Redirige a la página principal.
 - **Agregar**: Lleva al formulario para registrar un vehículo.
 - **Listar**: Muestra el listado completo de los vehículos.
+- **Iniciar Sesion**: Lleva al formulari de inicio de sesion
+- **Cerrar Sesion**: Cierra la sesion activa.
 
 ---
 
