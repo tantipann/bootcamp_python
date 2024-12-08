@@ -190,6 +190,7 @@ La barra de navegación incluye enlaces a:
 - Permite registrar nuevos usuarios en el sistema.
 - Los usuarios registrados reciben automáticamente permisos de `visualizar_catalogo`.
 - Redirección a la página de inicio después del registro exitoso.
+- Se accede desde la URL: `http://localhost:8000/usuarios/registro`
 
 **5. Agregar Vehículos**
 - Formulario para registrar nuevos vehículos en la base de datos.
