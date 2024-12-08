@@ -1,0 +1,4 @@
+*.pyc
+__pycache__/
+proyecto_vehiculos_django/
+

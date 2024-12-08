@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Logout{% endblock %}
+{% block content %}
+  <p>¡Sesión finalizada! Redirigiendo al inicio...</p>
+
+  <script type="text/javascript">
+    // Redirigir después de 2 segundos
+    setTimeout(function() {
+      window.location.href = "{% url 'index' %}";
+    }, 2000);  // 2000ms = 2 segundos
+  </script>
+{% endblock %}
