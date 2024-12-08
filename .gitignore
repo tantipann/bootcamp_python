@@ -1,3 +1,5 @@
 /Modulo03/links_githubs/
 /Modulo02/links_githubs/
+*.pyc
+__pycache__/
 
